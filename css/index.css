@@ -1,0 +1,65 @@
+.header {
+  height: 150px;
+}
+
+.header .head {
+  height: 150px;
+}
+
+.header .head .head_inner {
+  width: 1000px;
+  height: 100px;
+  margin: auto;
+  position: relative;
+  background-color: aquamarine;
+}
+
+.header .head .head_inner h1 {
+  float: left;
+  width: 180px;
+  margin: 26px 30px 26px 0;
+}
+
+.header .head .head_inner h1 img {
+  width: 100%;
+}
+
+.header .head .head_inner .search {
+  float: left;
+  margin-top: 26px;
+  position: relative;
+}
+
+.header .head .head_inner .search select {
+  width: 80px;
+  height: 40px;
+}
+
+.header .head .head_inner .search input[type='text'] {
+  width: 400px;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.header .head .head_inner .search input[type='submit'] {
+  width: 50px;
+  height: 40px;
+  background-color: blueviolet;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 485px;
+}
+
+.header .head .head_inner .link_main {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.header .head .service {
+  height: 50px;
+  border-top: 1px solid #f1f3f6;
+  border-bottom: 1px solid #f1f3f6;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,54 @@
+.header {
+    height: 150px;
+    .head {
+        height: 150px;
+        .head_inner {
+            width: 1000px;
+            height: 100px;
+            margin: auto;
+            position: relative;
+            background-color: aquamarine;
+            h1 {
+                float: left;
+                width: 180px;
+                margin: 26px 30px 26px 0;
+                img {
+                    width: 100%;
+                }
+            }
+            .search {
+                float: left;
+                margin-top: 26px;
+                position: relative;
+                select {
+                    width: 80px;
+                    height: 40px;
+                }
+                input[type='text'] {
+                    width: 400px;
+                    padding: 10px;
+                    border: 1px solid red;
+                }
+                input[type='submit'] {
+                    width: 50px;
+                    height: 40px;
+                    background-color: blueviolet;
+                    color: #fff;
+                    position: absolute;
+                    top: 0;
+                    left: 485px;
+                }
+            }
+            .link_main {
+                position: absolute;
+                top: 5px;
+                left: 10px;
+            }
+        }
+        .service {
+            height: 50px;
+            border-top: 1px solid #f1f3f6;
+            border-bottom: 1px solid #f1f3f6;
+        }
+    }
+}
