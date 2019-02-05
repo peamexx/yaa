@@ -1,78 +1,105 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 
 .header {
-    height: 170px;
+
     .head {
         .head_inner {
             width: 1000px;
             height: 100px;
             margin: auto;
             position: relative;
+
             h1 {
                 float: left;
                 width: 180px;
                 margin: 26px 30px 26px 0;
-                img {
-                    width: 100%;
+
+                a {
+                    display: block;
+
+                    img {
+                        width: 100%;
+                    }
                 }
             }
-            .search {
-                float: left;
-                margin-top: 26px;
-                position: relative;
+        }
+
+        .search {
+            float: left;
+            margin-top: 26px;
+            position: relative;
+
+            form {
+
                 select {
+                    float: left;
                     width: 110px;
                     height: 40px;
                     font-size: 14px;
-                    position: absolute;
-                    top: -2px;
                 }
-                input[type='text'] {
-                    width: 400px;
+
+                .section {
+                    float: left;
+                    width: 450px;
                     height: 40px;
-                    padding: 10px;
-                    border: 1px solid red;
-                    font-size: 18px;
+                    padding: 0 60px 0 10px;
+                    border: 2px solid #4070ff;
+                    position: relative;
+
+                    input[type='text'] {
+                        float: left;
+                        width: 380px;
+                        margin-top: 6px;
+                        font-size: 16px;
+                        outline: none;
+                    }
+
+                    input[type='submit'] {
+                        width: 58px;
+                        height: 40px;
+                        background: url('https://img.icons8.com/material/24/000000/search.png') no-repeat center center;
+                        position: absolute;
+                    }
                 }
-                input[type='submit'] {
-                    width: 50px;
-                    height: 40px;
-                    background-color: blueviolet;
-                    font-size: 16px;
-                    color: #fff;
-                    position: absolute;
-                    top: 0;
-                    left: 516px;
-                }
-            }
-            .link_main {
-                position: absolute;
-                top: 5px;
-                left: 10px;
             }
         }
+
+        .link_main {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+        }
     }
+
     .service {
         border-top: 1px solid #f1f3f6;
-        border-bottom: 1px solid #f1f3f6;
+        border-bottom: 1px solid #888;
+
         .service_inner {
             width: 1000px;
             height: 70px;
             margin: auto;
+
             ul {
                 display: table;
-                width: 100%;
                 margin: auto;
+
                 li {
                     float: left;
-                    width: 15%;
-                    margin-top: 1px;
-                    margin-right: 1%;
+                    height: 70px;
+
                     a {
+                        display: block;
+                        height: 70px;
+                        margin: 0 20px;
+                        padding-top: 5px;
+
                         img {
                             display: block;
+                            width: 40px;
                             margin: auto;
                         }
+
                         span {
                             display: block;
                             margin-top: 1px;
@@ -86,6 +113,57 @@
         }
     }
 }
+
+.container {
+    background-color: #f1f3f6;
+    overflow: hidden;
+    .container_inner {
+        width: 1000px;
+        height: 500px;
+        margin: 10px auto 0;
+        .column_left {
+            float: left;
+            margin-right: 10px;
+            .subject {
+                width: 300px;
+                height: 200px;
+                background-color: #fff;
+                border: 1px solid #dee3eb;
+                ul {
+                    width: 100%;
+                    li {
+                        float: left;
+                        width: 50%;
+                        height: 50px;
+                        border-bottom: 1px solid #f1f3f6;
+                        a {
+                            display: block;
+                            height: 50px;
+                            text-align: center;
+                            span {
+                                line-height: 46px;
+                                text-align: center;
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .column_right {
+            float: left;
+            .theme_news {
+                width: 690px;
+                height: 500px;
+                background-color: #4070ff;
+                border: 1px solid #dee3eb;
+            }
+        }
+    }
+}
+
+/*공통*/
 
 .screen_out {
     overflow: hidden;
