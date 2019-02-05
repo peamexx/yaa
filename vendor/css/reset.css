@@ -60,9 +60,13 @@ button {
 	background: transparent;
 }
 
+a,
+input[type="submit"],
+button {
+	cursor: pointer;
+}
+
 * {
 	box-sizing: border-box;
 	font-family: 'Noto Sans JP', sans-serif;
 }
-
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');

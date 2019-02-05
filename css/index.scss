@@ -1,13 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
 .header {
-    height: 150px;
+    height: 170px;
     .head {
-        height: 150px;
         .head_inner {
             width: 1000px;
             height: 100px;
             margin: auto;
             position: relative;
-            background-color: aquamarine;
             h1 {
                 float: left;
                 width: 180px;
@@ -21,22 +21,28 @@
                 margin-top: 26px;
                 position: relative;
                 select {
-                    width: 80px;
+                    width: 110px;
                     height: 40px;
+                    font-size: 14px;
+                    position: absolute;
+                    top: -2px;
                 }
                 input[type='text'] {
                     width: 400px;
+                    height: 40px;
                     padding: 10px;
                     border: 1px solid red;
+                    font-size: 18px;
                 }
                 input[type='submit'] {
                     width: 50px;
                     height: 40px;
                     background-color: blueviolet;
+                    font-size: 16px;
                     color: #fff;
                     position: absolute;
                     top: 0;
-                    left: 485px;
+                    left: 516px;
                 }
             }
             .link_main {
@@ -45,10 +51,47 @@
                 left: 10px;
             }
         }
-        .service {
-            height: 50px;
-            border-top: 1px solid #f1f3f6;
-            border-bottom: 1px solid #f1f3f6;
+    }
+    .service {
+        border-top: 1px solid #f1f3f6;
+        border-bottom: 1px solid #f1f3f6;
+        .service_inner {
+            width: 1000px;
+            height: 70px;
+            margin: auto;
+            ul {
+                display: table;
+                width: 100%;
+                margin: auto;
+                li {
+                    float: left;
+                    width: 15%;
+                    margin-top: 1px;
+                    margin-right: 1%;
+                    a {
+                        img {
+                            display: block;
+                            margin: auto;
+                        }
+                        span {
+                            display: block;
+                            margin-top: 1px;
+                            text-align: center;
+                            font-size: 14px;
+                            font-family: 'Noto Sans JP', sans-serif;
+                        }
+                    }
+                }
+            }
         }
     }
+}
+
+.screen_out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
 }
