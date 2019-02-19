@@ -4,7 +4,7 @@
 
     .head {
         .head_inner {
-            width: 1000px;
+            width: 800px;
             height: 100px;
             margin: auto;
             position: relative;
@@ -118,15 +118,56 @@
     background-color: #f1f3f6;
     overflow: hidden;
     .container_inner {
-        width: 1000px;width: 1000px;
+        width: 1000px;
         height: 500px;
         margin: 10px auto 0;
         .column_left {
             float: left;
-            margin-right: 10px;
+            .theme_news {
+                width: 690px;
+                height: 500px;
+                background-color: #4070ff;
+                border: 1px solid #dee3eb;
+                .tab {
+                    overflow: hidden;
+                    li {
+                        float: left;
+                        padding: 10px;
+                        border-right: 1px solid #ddd;
+                        background: #fff;
+                    }
+                }
+                .news {
+                    .top {
+                        position: relative;
+                        h3 {
+                            width: 40%;
+                            line-height: 1.6;
+                            font-size: 22px;
+                            font-weight: bold;
+                            position: absolute;
+                            top: 70px;
+                            right: 20px;
+                        }
+                    }
+                    top:before {
+                        content: '';
+                        width: 45%;
+                        height: 100%;
+                        background: rgba(0,0,0,0.5)
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                    }
+                }
+            }
+        }
+        .column_right {
+            float: left;
             .subject {
                 width: 300px;
                 height: 200px;
+                margin-left: 10px;
                 background-color: #fff;
                 border: 1px solid #dee3eb;
                 ul {
@@ -150,14 +191,68 @@
                     }
                 }
             }
-        }
-        .column_right {
-            float: left;
-            .theme_news {
-                width: 690px;
-                height: 500px;
-                background-color: #4070ff;
+            .login {
+                width: 300px;
+                margin-top: 10px;
+                margin-left: 10px;
+                padding: 10px;
+                background-color: #fff;
                 border: 1px solid #dee3eb;
+                input[type='text'] {
+                    padding: 6px;
+                    background-color: #f1f3f6;
+                }
+                button {
+                    margin-left: 5px;
+                    padding: 6px;
+                    text-align: center;
+                    background-color: #4070ff;
+                    color: #fff;
+                }
+                ul {
+                    display: table;
+                    margin: auto;
+                    margin-top: 5px;
+                    li {
+                        float: left;
+                        margin-right: 15px;
+                        position: relative;
+                        a {
+                            color: #999;
+                            font-size: 11px;
+                        }
+                        a:hover {
+                            color: #4070ff;
+                        }
+                    }
+                    li:first-child:before {
+                        content: '';
+                        width: 1px;
+                        height: 100%;
+                        background-color: #ddd;
+                        position: absolute;
+                        top: 2px;
+                        right: -8px;
+                    }
+                }
+            }
+            .ad {
+                width: 300px;
+                height: 185px;
+                margin-top: 10px;
+                margin-left: 10px;
+                background-color: #fff;
+                border: 1px solid #dee3eb;
+                position: relative;
+            }
+            .ad:before {
+                content: 'AD';
+                padding: 5px;
+                background-color: #333;
+                color: #fff;
+                position: absolute;
+                top: 0;
+                right: 0;
             }
         }
     }
