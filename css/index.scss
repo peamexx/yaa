@@ -126,7 +126,7 @@
             .theme_news {
                 width: 690px;
                 height: 500px;
-                background-color: #4070ff;
+                // background-color: #4070ff;
                 border: 1px solid #dee3eb;
                 .tab {
                     overflow: hidden;
@@ -137,7 +137,7 @@
                         background: #fff;
                     }
                 }
-                .news {
+                .contents {
                     .top {
                         position: relative;
                         h3 {
@@ -150,14 +150,31 @@
                             right: 20px;
                         }
                     }
-                    top:before {
+                    .top:before {
                         content: '';
                         width: 45%;
                         height: 100%;
-                        background: rgba(0,0,0,0.5)
+                        background: rgba(0,0,0,0.5);
                         position: absolute;
                         top: 0;
                         right: 0;
+                    }
+                    .bottom {
+                        ul {
+                            li {
+                                float: left;
+                                width: 137px;
+                                margin-right: 15px;
+                                img {
+                                    display: block;
+                                    margin: auto;
+                                }
+                                span {
+                                    display: block;
+                                    text-align: center;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -241,8 +258,9 @@
                 height: 185px;
                 margin-top: 10px;
                 margin-left: 10px;
-                background-color: #fff;
                 border: 1px solid #dee3eb;
+                background-color: #fff;
+                font-size: 12px;
                 position: relative;
             }
             .ad:before {
