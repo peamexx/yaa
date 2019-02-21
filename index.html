@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="vendor/css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+
+    <script src="vendor/js/jquery-3.3.1.js"></script>
 </head>
 
 <body>
@@ -19,57 +21,129 @@
                 <div class="theme_news">
                     <h2 class="screen_out">테마별 소식</h2>
                     <ul class="tab">
-                        <!-- <li><a href=""><span>動画LIVE</span></a></li> -->
-                        <li><a href=""><span>ニュース</span></a></li>
-                        <li><a href=""><span>経済</span></a></li>
-                        <li><a href=""><span>エンタメ</span></a></li>
-                        <li><a href=""><span>スポーツ</span></a></li>
-                        <li><a href=""><span>国内</span></a></li>
-                        <li><a href=""><span>国際</span></a></li>
-                        <li><a href=""><span>IT・科学</span></a></li>
-                        <li><a href=""><span>地域</span></a></li>
-                        <li><a href=""><span>地域</span></a></li>
+                        <li class="current" data-tab="tab1"><a href="#"><span>ニュース</span></a></li>
+                        <li data-tab="tab2"><a href="#"><span>経済</span></a></li>
+                        <li data-tab="tab3"><a href="#"><span>エンタメ</span></a></li>
+                        <li data-tab="tab4"><a href="#"><span>スポーツ</span></a></li>
+                        <li data-tab="tab5"><a href="#"><span>国内</span></a></li>
+                        <li data-tab="tab6"><a href="#"><span>国際</span></a></li>
+                        <li data-tab="tab7"><a href="#"><span>IT・科学</span></a></li>
+                        <li data-tab="tab8"><a href="#"><span>地域</span></a></li>
+                        <li data-tab="tab9"><a href="#"><span>地域</span></a></li>
                     </ul>
                     <div class="contents">
-                        <div class="top">
-                            <a href="">
-                                <img src="https://via.placeholder.com/690x286" alt="">
-                                <h3>ACL東地区16クラブが決定！　鹿島は快勝で本戦出場、広島はPK戦の末辛くも勝利</h3>
-                            </a>
-                            <ul>
-                                <li><a href=""><img src="https://via.placeholder.com/137x85" alt="기사사진1"><span>空自F2戦闘機
-                                            山口沖に墜落写真</span></a></li>
-                                <li><a href=""><img src="https://via.placeholder.com/137x85" alt="기사사진1"><span>空自F2戦闘機
-                                            山口沖に墜落写真</span></a></li>
-                                <li><a href=""><img src="https://via.placeholder.com/137x85" alt="기사사진1"><span>空自F2戦闘機
-                                            山口沖に墜落写真</span></a></li>
-                                <li><a href=""><img src="https://via.placeholder.com/137x85" alt="기사사진1"><span>空自F2戦闘機
-                                            山口沖に墜落写真</span></a></li>
-                            </ul>
-                        </div>
-                        <div class="bottom">
-                            <div class="left">
+                        <div id="tab1">
+                            <div class="top">
+                                <a href="">
+                                    <img src="https://via.placeholder.com/690x286" alt="">
+                                    <h3>ACL東地区16クラブが決定！　鹿島は快勝で本戦出場、広島はPK戦の末辛くも勝利</h3>
+                                </a>
                                 <ul>
-                                    <li><a href="">厚労省 統計の再推計に前向き写真</a></li>
-                                    <li><a href="">厚労省 統計の再推計に前向き写真</a></li>
-                                    <li><a href="">厚労省 統計の再推計に前向き写真</a></li>
-                                    <li><a href="">厚労省 統計の再推計に前向き写真</a></li>
+                                    <li><a href=""><img src="https://via.placeholder.com/137x85" alt="기사사진1"><span>空自墜落
+                                                全戦闘機の訓練中止動画</span></a></li>
+                                    <li><a href=""><img src="https://via.placeholder.com/137x85" alt="기사사진2"><span>天皇在位30年式典
+                                                共産は欠席写真NEW</span></a></li>
+                                    <li><a href=""><img src="https://via.placeholder.com/137x85" alt="기사사진3"><span>徳川19代目
+                                                知事選は出馬せず動画</span></a></li>
+                                    <li><a href=""><img src="https://via.placeholder.com/137x85" alt="기사사진4"><span>患者にわいせつ
+                                                医師に無罪NEW</span></a></li>
                                 </ul>
                             </div>
-                            <div class="right">
-                                <ul>
-                                    <li><a href="">厚労省 統計の再推計に前向き写真</a></li>
-                                    <li><a href="">厚労省 統計の再推計に前向き写真</a></li>
-                                    <li><a href="">厚労省 統計の再推計に前向き写真</a></li>
-                                    <li><a href="">厚労省 統計の再推計に前向き写真</a></li>
-                                </ul>
+                            <div class="bottom">
+                                <div class="left">
+                                    <ul>
+                                        <li><a href="">徳川19代目 知事選は出馬せず映像new</a></li>
+                                        <li><a href="">徴用工 現金化動き韓国不介入写真</a></li>
+                                        <li><a href="">ローソン 駅ナカ売れ筋に変化写真</a></li>
+                                        <li><a href="">ガガ、2度目の婚約破棄写真new</a></li>
+                                    </ul>
+                                </div>
+                                <div class="right">
+                                    <ul>
+                                        <li><a href="">大坂まさかの黒星 ミス連発写真</a></li>
+                                        <li><a href="">同人誌は高い?説明画像が話題写真</a></li>
+                                        <li><a href="">消しゴムのカス　床に捨てるのはマナー違反？</a></li>
+                                        <li><a href="">患者にわいせつ 医師に無罪new</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-
+                        <div id="tab2">
+                            <?php include 'theme_news_tab2.php';?>
+                        </div>
+                        <div id="tab3">
+                            <?php include 'theme_news_tab3.php';?>
+                        </div>
                     </div>
                 </div>
+                <script>
+                    $(function() {
+                        $('.theme_news .tab li').click(function() {
+                            var tab_id = $(this).attr('data-tab');
+                            $('.theme_news .tab li').removeClass('current');
+                            $(this).addClass('current');
+                            $(".theme_news .contents > div").hide();
+                            $("#"+tab_id).show();
+                        })
+                    })
+                </script>
                 <div class="ad"></div>
-                <div class="recommend"></div>
+                <div class="recommend">
+                    <h2>あなたへのおすすめ</h2>
+                    <ul class="post">
+                        <li>
+                            <a href="">
+                                <div class="img"><img src="https://via.placeholder.com/137x85" alt="기사사진1"></div>
+                                <div class="text">
+                                    <span class="headline">佐々木すみ江さん 死因は肺炎写真</span>
+                                    <p class="article">亡くなったことが明らかになった女優の佐々木すみ江さん（享年９０）の所属事務所は２０日、佐々木さんが１７日に亡くなったことを正式に発表した。死因は肺炎だったという。公式サイトで明らかにした。</p>
+                                    <span class="publishing">スポーツ報知</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="img"><img src="https://via.placeholder.com/137x85" alt="기사사진1"></div>
+                                <div class="text">
+                                    <span class="headline">佐々木すみ江さん 死因は肺炎写真</span>
+                                    <p class="article">亡くなったことが明らかになった女優の佐々木すみ江さん（享年９０）の所属事務所は２０日、佐々木さんが１７日に亡くなったことを正式に発表した。死因は肺炎だったという。公式サイトで明らかにした。</p>
+                                    <span class="publishing">スポーツ報知</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="img"><img src="https://via.placeholder.com/137x85" alt="기사사진1"></div>
+                                <div class="text">
+                                    <span class="headline">佐々木すみ江さん 死因は肺炎写真</span>
+                                    <p class="article">亡くなったことが明らかになった女優の佐々木すみ江さん（享年９０）の所属事務所は２０日、佐々木さんが１７日に亡くなったことを正式に発表した。死因は肺炎だったという。公式サイトで明らかにした。</p>
+                                    <span class="publishing">スポーツ報知</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="img"><img src="https://via.placeholder.com/137x85" alt="기사사진1"></div>
+                                <div class="text">
+                                    <span class="headline">佐々木すみ江さん 死因は肺炎写真</span>
+                                    <p class="article">亡くなったことが明らかになった女優の佐々木すみ江さん（享年９０）の所属事務所は２０日、佐々木さんが１７日に亡くなったことを正式に発表した。死因は肺炎だったという。公式サイトで明らかにした。</p>
+                                    <span class="publishing">スポーツ報知</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="img"><img src="https://via.placeholder.com/137x85" alt="기사사진1"></div>
+                                <div class="text">
+                                    <span class="headline">佐々木すみ江さん 死因は肺炎写真</span>
+                                    <p class="article">亡くなったことが明らかになった女優の佐々木すみ江さん（享年９０）の所属事務所は２０日、佐々木さんが１７日に亡くなったことを正式に発表した。死因は肺炎だったという。公式サイトで明らかにした。</p>
+                                    <span class="publishing">スポーツ報知</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
             <div class="column_right">
                 <div class="subject">
@@ -110,11 +184,11 @@
                 <div class="trending">
                     <h2>リアルタイム検索</h2>
                     <ul>
-                        <li><a href=""><span class="num">1</span><span>내용용용</span></a></li>
-                        <li><a href=""><span class="num">2</span><span>내용용용</span></a></li>
-                        <li><a href=""><span class="num">3</span><span>내용용용</span></a></li>
-                        <li><a href=""><span class="num">4</span><span>내용용용</span></a></li>
-                        <li><a href=""><span class="num">5</span><span>내용용용</span></a></li>
+                        <li><a href=""><span class="num">1</span><span>江田憲司</span></a></li>
+                        <li><a href=""><span class="num">2</span><span>アイア</span></a></li>
+                        <li><a href=""><span class="num">3</span><span>術後せん妄</span></a></li>
+                        <li><a href=""><span class="num">4</span><span>MYOJO</span></a></li>
+                        <li><a href=""><span class="num">5</span><span>乳腺外科医</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -122,5 +196,16 @@
     </div>
     <?php include 'footer.php';?>
 </body>
+
+<script>
+    $(function () {
+        $('.recommend').infiniteScroll({
+            // options
+            path: '.pagination__next',
+            append: '.post',
+            history: false,
+        });
+    })
+</script>
 
 </html>

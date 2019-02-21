@@ -109,7 +109,7 @@
 .container {
   background-color: #f1f3f6;
   overflow: hidden;
-  margin-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .container .container_inner {
@@ -138,6 +138,10 @@
   background: #fff;
 }
 
+.container .container_inner .column_left .theme_news .tab li a {
+  display: block;
+}
+
 .container .container_inner .column_left .theme_news .tab li:first-child {
   border-left: 1px solid #dee3eb;
 }
@@ -145,6 +149,14 @@
 .container .container_inner .column_left .theme_news .contents {
   background-color: #fff;
   border: 1px solid #dee3eb;
+}
+
+.container .container_inner .column_left .theme_news .contents > div {
+  display: none;
+}
+
+.container .container_inner .column_left .theme_news .contents #tab1 {
+  display: block;
 }
 
 .container .container_inner .column_left .theme_news .contents .top {
@@ -173,7 +185,7 @@
 
 .container .container_inner .column_left .theme_news .contents .top ul {
   display: table;
-  margin: 10px auto;
+  margin: 10px auto 0;
 }
 
 .container .container_inner .column_left .theme_news .contents .top ul li {
@@ -222,7 +234,7 @@
 }
 
 .container .container_inner .column_left .theme_news .contents .bottom {
-  margin: 20px 0;
+  margin: 30px 0 20px;
   overflow: hidden;
 }
 
@@ -237,14 +249,15 @@
 }
 
 .container .container_inner .column_left .theme_news .contents .bottom div ul li {
-  padding: 10px 0;
-  border-top: 1px solid #dee3eb;
+  padding: 7px;
+  border-bottom: 1px solid #dee3eb;
 }
 
 .container .container_inner .column_left .theme_news .contents .bottom div ul li a {
   display: block;
   width: 100%;
   text-align: center;
+  line-height: 1.2;
 }
 
 .container .container_inner .column_left .theme_news .contents .bottom div ul li:hover a {
@@ -263,9 +276,64 @@
 
 .container .container_inner .column_left .recommend {
   width: 690px;
-  padding: 15px 0;
+  padding: 15px;
   border: 1px solid #dee3eb;
   background-color: #fff;
+  overflow: hidden;
+}
+
+.container .container_inner .column_left .recommend h2 {
+  margin: 0 15px 5px 0;
+  color: #4070ff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container .container_inner .column_left .recommend ul li {
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.container .container_inner .column_left .recommend ul li a div {
+  float: left;
+}
+
+.container .container_inner .column_left .recommend ul li a .img img {
+  width: 137px;
+  height: 85px;
+}
+
+.container .container_inner .column_left .recommend ul li a .text {
+  width: 511px;
+  margin-left: 10px;
+}
+
+.container .container_inner .column_left .recommend ul li a .text .headline {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container .container_inner .column_left .recommend ul li a .text .article {
+  max-height: 36px;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #666;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.container .container_inner .column_left .recommend ul li a .text .publishing {
+  color: #999;
+  font-size: 12px;
+}
+
+.container .container_inner .column_left .recommend ul li a:hover .article {
+  text-decoration: underline;
 }
 
 .container .container_inner .column_right {
@@ -402,6 +470,51 @@
   margin-bottom: 0;
 }
 
+.footer {
+  height: 100px;
+  border-top: 1px solid #dee3eb;
+  overflow: hidden;
+}
+
+.footer .footer_inner {
+  width: 1000px;
+  margin: auto;
+}
+
+.footer .footer_inner ul {
+  display: table-cell;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.footer .footer_inner ul li {
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+
+.footer .footer_inner ul li a {
+  font-size: 13px;
+}
+
+.footer .footer_inner ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer_inner ul li:before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #ddd;
+  position: absolute;
+  top: 0;
+  right: -10px;
+}
+
+.footer .footer_inner ul li:last-child:before {
+  display: none;
+}
+
 /*공통*/
 .screen_out {
   overflow: hidden;
@@ -420,5 +533,14 @@
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.current {
+  display: inherit;
+}
+
+.current a {
+  color: #4070ff;
+  font-weight: bold;
 }
 /*# sourceMappingURL=index.css.map */
