@@ -298,9 +298,11 @@
   float: left;
 }
 
-.container .container_inner .column_left .recommend ul li a .img img {
+.container .container_inner .column_left .recommend ul li a .img {
   width: 137px;
   height: 85px;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .container .container_inner .column_left .recommend ul li a .text {
