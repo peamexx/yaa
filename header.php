@@ -19,8 +19,13 @@
                     </select>
                     <div class="section">
                         <input type="text">
-                        <input type="submit" value="">
+                        <input type="submit" value="検索">
                     </div>
+                    <script>
+                        $(function() {
+                            $('.search .section input[type="submit"]').val().css('display','none');
+                        })
+                    </script>
                 </form>
             </div>
             <!--<a href="" class="link_main">야후를 시작페이지로</a>-->

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/index.css">
 
     <script src="vendor/js/jquery-3.3.1.js"></script>
+    <script src="vendor/js/jquery.cookie.js"></script>
 </head>
 
 <body>
@@ -35,27 +36,26 @@
                         <div id="tab1">
                             <div class="top">
                                 <a href="">
-                                    <img src="https://via.placeholder.com/690x286" alt="">
+                                    <img src="img/theme_news/tab1/top.jpg" alt="">
                                     <h3>ACL東地区16クラブが決定！　鹿島は快勝で本戦出場、広島はPK戦の末辛くも勝利</h3>
                                 </a>
                                 <ul>
-                                    <li><a href=""><img src="https://via.placeholder.com/137x85" alt="기사사진1"><span>空自墜落
+                                    <li><a href=""><img src="img/theme_news/tab1/bottom1.jpg" alt=""><span>空自墜落
                                                 全戦闘機の訓練中止動画</span></a></li>
-                                    <li><a href=""><img src="https://via.placeholder.com/137x85" alt="기사사진2"><span>天皇在位30年式典
-                                                共産は欠席写真NEW</span></a></li>
-                                    <li><a href=""><img src="https://via.placeholder.com/137x85" alt="기사사진3"><span>徳川19代目
+                                    <li><a href=""><img src="img/theme_news/tab1/bottom2.jpg" alt=""><span>天皇在位30年式典
+                                                共産は欠席写真</span></a></li>
+                                    <li><a href=""><img src="img/theme_news/tab1/bottom3.jpg" alt=""><span>徳川19代目
                                                 知事選は出馬せず動画</span></a></li>
-                                    <li><a href=""><img src="https://via.placeholder.com/137x85" alt="기사사진4"><span>患者にわいせつ
-                                                医師に無罪NEW</span></a></li>
+                                    <li><a href=""><img src="img/theme_news/tab1/bottom4.jpg" alt=""><span>辺野古まで８０キロ縦断、徒歩や自転車で　投票呼びかけ</span></a></li>
                                 </ul>
                             </div>
                             <div class="bottom">
                                 <div class="left">
                                     <ul>
-                                        <li><a href="">徳川19代目 知事選は出馬せず映像new</a></li>
+                                        <li><a href="">徳川19代目 知事選は出馬せず映像</a></li>
                                         <li><a href="">徴用工 現金化動き韓国不介入写真</a></li>
                                         <li><a href="">ローソン 駅ナカ売れ筋に変化写真</a></li>
-                                        <li><a href="">ガガ、2度目の婚約破棄写真new</a></li>
+                                        <li><a href="">ガガ、2度目の婚約破棄写真</a></li>
                                     </ul>
                                 </div>
                                 <div class="right">
@@ -63,7 +63,7 @@
                                         <li><a href="">大坂まさかの黒星 ミス連発写真</a></li>
                                         <li><a href="">同人誌は高い?説明画像が話題写真</a></li>
                                         <li><a href="">消しゴムのカス　床に捨てるのはマナー違反？</a></li>
-                                        <li><a href="">患者にわいせつ 医師に無罪new</a></li>
+                                        <li><a href="">患者にわいせつ 医師に無罪</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -150,16 +150,46 @@
                 <div class="subject">
                     <h2 class="screen_out">관심 주제</h2>
                     <ul>
-                        <li><a href=""><span>ショッピング</span></a></li>
+                        <li><a href="www.naver.com"><span>ショッピング</span></a></li>
                         <li><a href=""><span>ヤフオク!</span></a></li>
                         <li><a href=""><span>LOHACO</span></a></li>
                         <li><a href=""><span>トラベル</span></a></li>
                         <li><a href=""><span>一休.com</span></a></li>
                         <li><a href=""><span>ニュース</span></a></li>
-                        <li><a href=""><span>天気・災害</span></a></li>
-                        <li><a href=""><span>더보기</span></a></li>
+                        <li><a href=""><span>スポーツナビ</span></a></li>
+                        <li><a href=""><span>ファイナンス</span></a></li>
+                        <li><a href=""><span>テレビ</span></a></li>
+                        <li><a href=""><span>モバゲー</span></a></li>
+                        <li><a href=""><span>地図</span></a></li>
+                        <li class="more"><a href="#"><span>더보기</span></a>
+                            <ul class="sub_subject">
+                                <li><a href="www.daum.net"><span><input type="radio" name="" id=""></span><label for="">路線情報</label></a></li>
+                                <li><a href=""><span><input type="radio" name="" id=""></span><label for="">Retty</label></a></li>
+                                <li><a href=""><span><input type="radio" name="" id=""></span><label for="">クラシル</label></a></li>
+                                <li><a href=""><span><input type="radio" name="" id=""></span><label for="">不動産</label></a></li>
+                                <li><a href=""><span><input type="radio" name="" id=""></span><label for="">自動車</label></a></li>
+                                <li><a href=""><span><input type="radio" name="" id=""></span><label for="">ブログ</label></a></li>
+                                <!-- <button class="close_btn" onclick="close()">닫기</button> -->
+                            </ul>
+                        </li>
                     </ul>
                 </div>
+                <script>
+                    $(function() {
+                        $('.subject .more').click(function() {
+                            $('.sub_subject').css('display','block');
+                        });
+                        $('.sub_subject input').click(function() {
+                            var count = $('.sub_subject input:checked').length-1;
+                            var subject_li = $('.subject > ul > li');
+                            var label_text = $(this).parent().siblings('label').text();
+                            var label_href = $(this).closest('a').attr('href');
+
+                            subject_li.eq(count).find('span').text(label_text);
+                            subject_li.eq(count).find('a').attr('href',label_href);
+                        });
+                    })
+                </script>
                 <div class="login">
                     <h2 class="screen_out">로그인</h2>
                     <form action="">
@@ -197,16 +227,5 @@
     </div>
     <?php include 'footer.php';?>
 </body>
-
-<script>
-    $(function () {
-        $('.recommend').infiniteScroll({
-            // options
-            path: '.pagination__next',
-            append: '.post',
-            history: false,
-        });
-    })
-</script>
 
 </html>

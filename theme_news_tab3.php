@@ -13,7 +13,7 @@
 <div class="bottom">
     <div class="left">
         <ul>
-            <li><a href="">GACKTの豪邸企画　TVで何度も“初公開”されるのはなぜか？/a></li>
+            <li><a href="">GACKTの豪邸企画　TVで何度も“初公開”されるのはなぜか</a></li>
             <li><a href="">ウルルン復活特番 竹内涼真で写真</a></li>
             <li><a href="">滝沢氏肝入り Jr.サイト開設写真</a></li>
             <li><a href="">ストーカー女子、その女子をストーカーする男子「君だけは死んでもごめん」1巻</a></li>
