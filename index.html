@@ -25,12 +25,12 @@
                         <li class="current" data-tab="tab1"><a href="#"><span>ニュース</span></a></li>
                         <li data-tab="tab2"><a href="#"><span>経済</span></a></li>
                         <li data-tab="tab3"><a href="#"><span>エンタメ</span></a></li>
-                        <li data-tab="tab4"><a href="#"><span>スポーツ</span></a></li>
-                        <li data-tab="tab5"><a href="#"><span>国内</span></a></li>
-                        <li data-tab="tab6"><a href="#"><span>国際</span></a></li>
-                        <li data-tab="tab7"><a href="#"><span>IT・科学</span></a></li>
-                        <li data-tab="tab8"><a href="#"><span>地域</span></a></li>
-                        <li data-tab="tab9"><a href="#"><span>地域</span></a></li>
+                        <li data-tab="tab1"><a href="#"><span>スポーツ</span></a></li>
+                        <li data-tab="tab2"><a href="#"><span>国内</span></a></li>
+                        <li data-tab="tab3"><a href="#"><span>国際</span></a></li>
+                        <li data-tab="tab1"><a href="#"><span>IT・科学</span></a></li>
+                        <li data-tab="tab2"><a href="#"><span>地域</span></a></li>
+                        <li data-tab="tab3"><a href="#"><span>地域</span></a></li>
                     </ul>
                     <div class="contents">
                         <div id="tab1">
@@ -87,7 +87,9 @@
                         })
                     })
                 </script>
-                <div class="ad"></div>
+                <div class="ad">
+                    <img src="img/ad/ad2.png" alt="advertise img">
+                </div>
                 <div class="recommend">
                     <h2>あなたへのおすすめ</h2>
                     <ul class="post">
@@ -169,7 +171,7 @@
                                 <li><a href=""><span><input type="radio" name="" id=""></span><label for="">不動産</label></a></li>
                                 <li><a href=""><span><input type="radio" name="" id=""></span><label for="">自動車</label></a></li>
                                 <li><a href=""><span><input type="radio" name="" id=""></span><label for="">ブログ</label></a></li>
-                                <!-- <button class="close_btn" onclick="close()">닫기</button> -->
+                                <button class="close_btn">닫기</button>
                             </ul>
                         </li>
                     </ul>
@@ -178,6 +180,9 @@
                     $(function() {
                         $('.subject .more').click(function() {
                             $('.sub_subject').css('display','block');
+                        });
+                        $('.sub_subject .close_btn').click(function() {
+                            $('.sub_subject').toggle();
                         });
                         $('.sub_subject input').click(function() {
                             var count = $('.sub_subject input:checked').length-1;
@@ -211,7 +216,9 @@
                         </div> -->
                     </form>
                 </div>
-                <div class="ad"></div>
+                <div class="ad">
+                    <img src="img/ad/ad1.jpg" alt="advertise img">
+                </div>
                 <div class="trending">
                     <h2>リアルタイム検索</h2>
                     <ul>

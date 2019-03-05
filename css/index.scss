@@ -279,6 +279,7 @@
                                         width: 100%;
                                         text-align: center;
                                         line-height: 1.2;
+                                        font-size: 15px;
                                     }
                                 }
 
@@ -294,11 +295,6 @@
             .ad {
                 width: 690px;
                 height: 95px;
-                margin: 10px 0;
-                border: 1px solid #dee3eb;
-                background-color: #fff;
-                font-size: 13px;
-                position: relative;
             }
 
             .recommend {
@@ -484,11 +480,6 @@
             .ad {
                 width: 300px;
                 height: 185px;
-                margin-top: 10px;
-                border: 1px solid #dee3eb;
-                background-color: #fff;
-                font-size: 12px;
-                position: relative;
             }
 
             .trending {
@@ -528,6 +519,18 @@
                         margin-bottom: 0;
                     }
                 }
+            }
+        }
+
+        .ad {
+            margin: 10px 0;
+            border: 1px solid #dee3eb;
+            background-color: #fff;
+            font-size: 13px;
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 100%;
             }
         }
     }
