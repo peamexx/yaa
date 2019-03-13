@@ -13,5 +13,8 @@
             <li><a href="">メディアステートメント</a></li>
             <li><a href="">プライバシー</a></li>
         </ul>
+        <div class="footer_bottom">
+        <span>Copyright (C) 2019 Yahoo Japan Corporation. All Rights Reserved.</span>
+        </div>
     </div>
 </div>

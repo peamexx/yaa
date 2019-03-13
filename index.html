@@ -12,72 +12,84 @@
 
     <script src="vendor/js/jquery-3.3.1.js"></script>
     <script src="vendor/js/jquery.cookie.js"></script>
+    <script src="js/common.js"></script>
 </head>
 
 <body>
-    <?php include 'header.php';?>
-    <div class="container">
-        <div class="container_inner">
-            <div class="column_left">
-                <div class="theme_news">
-                    <h2 class="screen_out">테마별 소식</h2>
-                    <ul class="tab">
-                        <li class="current" data-tab="tab1"><a href="#"><span>ニュース</span></a></li>
-                        <li data-tab="tab2"><a href="#"><span>経済</span></a></li>
-                        <li data-tab="tab3"><a href="#"><span>エンタメ</span></a></li>
-                        <li data-tab="tab1"><a href="#"><span>スポーツ</span></a></li>
-                        <li data-tab="tab2"><a href="#"><span>国内</span></a></li>
-                        <li data-tab="tab3"><a href="#"><span>国際</span></a></li>
-                        <li data-tab="tab1"><a href="#"><span>IT・科学</span></a></li>
-                        <li data-tab="tab2"><a href="#"><span>地域</span></a></li>
-                        <li data-tab="tab3"><a href="#"><span>地域</span></a></li>
-                    </ul>
-                    <div class="contents">
-                        <div id="tab1">
-                            <div class="top">
-                                <a href="">
-                                    <img src="img/theme_news/tab1/top.jpg" alt="">
-                                    <h3>ACL東地区16クラブが決定！　鹿島は快勝で本戦出場、広島はPK戦の末辛くも勝利</h3>
-                                </a>
-                                <ul>
-                                    <li><a href=""><img src="img/theme_news/tab1/bottom1.jpg" alt=""><span>空自墜落
-                                                全戦闘機の訓練中止動画</span></a></li>
-                                    <li><a href=""><img src="img/theme_news/tab1/bottom2.jpg" alt=""><span>天皇在位30年式典
-                                                共産は欠席写真</span></a></li>
-                                    <li><a href=""><img src="img/theme_news/tab1/bottom3.jpg" alt=""><span>徳川19代目
-                                                知事選は出馬せず動画</span></a></li>
-                                    <li><a href=""><img src="img/theme_news/tab1/bottom4.jpg" alt=""><span>辺野古まで８０キロ縦断、徒歩や自転車で　投票呼びかけ</span></a></li>
-                                </ul>
-                            </div>
-                            <div class="bottom">
-                                <div class="left">
+    <div class="wrap">
+        <?php include 'header.php';?>
+
+        <div class="container">
+            <div class="container_inner">
+                <div class="column_left">
+                    <div class="line_news">
+                        <h2 class="screen_out">주요 한줄 문단</h2>
+                        <ul>
+                            <li>すごい食べ放題特集、人気店の食べ放題がゾロ目価格に </li>
+                            <li>物件の資料請求や見学予約でお得なクーポンもらえる</li>
+                            <li>老いても消えぬ記憶 元死刑囚写真NEW</li>
+                            <li>トヨタは1万700円の賃上げ写真</li>
+                        </ul>
+                    </div>
+                    <div class="theme_news">
+                        <h2 class="screen_out">테마별 소식</h2>
+                        <ul class="tab">
+                            <li class="current" data-tab="tab1"><a href="#"><span>ニュース</span></a></li>
+                            <li data-tab="tab2"><a href="#"><span>経済</span></a></li>
+                            <li data-tab="tab3"><a href="#"><span>エンタメ</span></a></li>
+                            <li data-tab="tab1"><a href="#"><span>スポーツ</span></a></li>
+                            <li data-tab="tab2"><a href="#"><span>国内</span></a></li>
+                            <li data-tab="tab3"><a href="#"><span>国際</span></a></li>
+                            <li data-tab="tab1"><a href="#"><span>IT・科学</span></a></li>
+                            <li data-tab="tab2"><a href="#"><span>地域</span></a></li>
+                            <li data-tab="tab3"><a href="#"><span>地域</span></a></li>
+                        </ul>
+                        <div class="contents">
+                            <div id="tab1">
+                                <div class="top">
+                                    <a href="">
+                                        <img src="img/theme_news/tab1/top.jpg" alt="">
+                                        <h3>ACL東地区16クラブが決定！　鹿島は快勝で本戦出場、広島はPK戦の末辛くも勝利</h3>
+                                    </a>
                                     <ul>
-                                        <li><a href="">徳川19代目 知事選は出馬せず映像</a></li>
-                                        <li><a href="">徴用工 現金化動き韓国不介入写真</a></li>
-                                        <li><a href="">ローソン 駅ナカ売れ筋に変化写真</a></li>
-                                        <li><a href="">ガガ、2度目の婚約破棄写真</a></li>
+                                        <li><a href=""><img src="img/theme_news/tab1/bottom1.jpg" alt=""><span>空自墜落
+                                                    全戦闘機の訓練中止動画</span></a></li>
+                                        <li><a href=""><img src="img/theme_news/tab1/bottom2.jpg" alt=""><span>天皇在位30年式典
+                                                    共産は欠席写真</span></a></li>
+                                        <li><a href=""><img src="img/theme_news/tab1/bottom3.jpg" alt=""><span>徳川19代目
+                                                    知事選は出馬せず動画</span></a></li>
+                                        <li><a href=""><img src="img/theme_news/tab1/bottom4.jpg" alt=""><span>辺野古まで８０キロ縦断、徒歩や自転車で　投票呼びかけ</span></a></li>
                                     </ul>
                                 </div>
-                                <div class="right">
-                                    <ul>
-                                        <li><a href="">大坂まさかの黒星 ミス連発写真</a></li>
-                                        <li><a href="">同人誌は高い?説明画像が話題写真</a></li>
-                                        <li><a href="">消しゴムのカス　床に捨てるのはマナー違反？</a></li>
-                                        <li><a href="">患者にわいせつ 医師に無罪</a></li>
-                                    </ul>
+                                <div class="bottom">
+                                    <div class="left">
+                                        <ul>
+                                            <li><a href="">徳川19代目 知事選は出馬せず映像</a></li>
+                                            <li><a href="">徴用工 現金化動き韓国不介入写真</a></li>
+                                            <li><a href="">ローソン 駅ナカ売れ筋に変化写真</a></li>
+                                            <li><a href="">ガガ、2度目の婚約破棄写真</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="right">
+                                        <ul>
+                                            <li><a href="">大坂まさかの黒星 ミス連発写真</a></li>
+                                            <li><a href="">同人誌は高い?説明画像が話題写真</a></li>
+                                            <li><a href="">消しゴムのカス　床に捨てるのはマナー違反？</a></li>
+                                            <li><a href="">患者にわいせつ 医師に無罪</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div id="tab2">
-                            <?php include 'theme_news_tab2.php';?>
-                        </div>
-                        <div id="tab3">
-                            <?php include 'theme_news_tab3.php';?>
+                            <div id="tab2">
+                                <?php include 'theme_news_tab2.php';?>
+                            </div>
+                            <div id="tab3">
+                                <?php include 'theme_news_tab3.php';?>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <script>
-                    $(function() {
+                    <!-- <script>
+                        $(function() {
                         $('.theme_news .tab li').click(function() {
                             var tab_id = $(this).attr('data-tab');
                             $('.theme_news .tab li').removeClass('current');
@@ -86,98 +98,104 @@
                             $("#"+tab_id).show();
                         })
                     })
-                </script>
-                <div class="ad">
-                    <img src="img/ad/ad2.png" alt="advertise img">
-                </div>
-                <div class="recommend">
-                    <h2>あなたへのおすすめ</h2>
-                    <ul class="post">
-                        <li>
-                            <a href="">
-                                <div class="img" style="background-image: url(img/recommend/1.jpg)"></div>
-                                <div class="text">
-                                    <span class="headline">佐々木すみ江さん 死因は肺炎写真</span>
-                                    <p class="article">亡くなったことが明らかになった女優の佐々木すみ江さん（享年９０）の所属事務所は２０日、佐々木さんが１７日に亡くなったことを正式に発表した。死因は肺炎だったという。公式サイトで明らかにした。</p>
-                                    <span class="publishing">スポーツ報知</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="img" style="background-image: url(img/recommend/2.jpg)"></div>
-                                <div class="text">
-                                    <span class="headline">メドベージェワが復活気配のＳＰ首位発進　大激戦ロシア女子の世界３枠目争いは誰に？</span>
-                                    <p class="article">女子ショートプログラム（ＳＰ）が行われ、平昌五輪銀メダリストのエフゲニア・メドベージェワ（１９）が７６・８９点で首位に立った。欧州選手権４位のスタスラニア・コンスタンチノワ（１８）が７５・４７点で２位。元世界女王のエリザベータ・トゥクタミシェワ（２２）は７２・２１点で４位につけた。</p>
-                                    <span class="publishing">デイリースポーツ</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="img" style="background-image: url(img/recommend/3.jpg)"></div>
-                                <div class="text">
-                                    <span class="headline">坂口杏里さん、意味深ツイート「弱いな、自分」前日は元カレの浮気暴露</span>
-                                    <p class="article">元タレントの坂口杏里さん（２７）が２２日、自身のツイッターを更新し、「弱いな、自分」と吐露した。１９日にで右手の薬指と小指の骨折を明かし、２０日には入院の必要があることも報告した杏里さん。</p>
-                                    <span class="publishing">スポーツ報知</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="img" style="background-image: url(img/recommend/4.jpg)"></div>
-                                <div class="text">
-                                    <span class="headline">桜田五輪相、「5分前行動」宣言＝国会遅刻を反省</span>
-                                    <p class="article">　桜田義孝五輪担当相は22日午前の閣議後の記者会見で、21日の衆院予算委員会に遅刻したことについて「深くおわび申し上げたい」と改めて陳謝した。
-                                    </p>
-                                    <span class="publishing">時事通信</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <div class="img" style="background-image: url(img/recommend/5.jpg)"></div>
-                                <div class="text">
-                                    <span class="headline">「そのままでは社会のゴミになる」お金を稼ぐ生き方を捨てた東大卒の若者にデヴィ夫人が喝</span>
-                                    <p class="article">お金はあればあるほど幸せなのか。19日放送のAbemaTV『AbemaPrime』は、そんな難問について考えた。</p>
-                                    <span class="publishing">AbemaTIMES</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                </script> -->
+                    <div class="ad">
+                        <img src="img/ad/ad2.png" alt="advertise img">
+                    </div>
+                    <div class="recommend">
+                        <h2>あなたへのおすすめ</h2>
+                        <ul class="post">
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background-image: url(img/recommend/1.jpg)"></div>
+                                    <div class="text">
+                                        <span class="headline">佐々木すみ江さん 死因は肺炎写真</span>
+                                        <p class="article">亡くなったことが明らかになった女優の佐々木すみ江さん（享年９０）の所属事務所は２０日、佐々木さんが１７日に亡くなったことを正式に発表した。死因は肺炎だったという。公式サイトで明らかにした。</p>
+                                        <span class="publishing">スポーツ報知</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background-image: url(img/recommend/2.jpg)"></div>
+                                    <div class="text">
+                                        <span class="headline">メドベージェワが復活気配のＳＰ首位発進　大激戦ロシア女子の世界３枠目争いは誰に？</span>
+                                        <p class="article">女子ショートプログラム（ＳＰ）が行われ、平昌五輪銀メダリストのエフゲニア・メドベージェワ（１９）が７６・８９点で首位に立った。欧州選手権４位のスタスラニア・コンスタンチノワ（１８）が７５・４７点で２位。元世界女王のエリザベータ・トゥクタミシェワ（２２）は７２・２１点で４位につけた。</p>
+                                        <span class="publishing">デイリースポーツ</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background-image: url(img/recommend/3.jpg)"></div>
+                                    <div class="text">
+                                        <span class="headline">坂口杏里さん、意味深ツイート「弱いな、自分」前日は元カレの浮気暴露</span>
+                                        <p class="article">元タレントの坂口杏里さん（２７）が２２日、自身のツイッターを更新し、「弱いな、自分」と吐露した。１９日にで右手の薬指と小指の骨折を明かし、２０日には入院の必要があることも報告した杏里さん。</p>
+                                        <span class="publishing">スポーツ報知</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background-image: url(img/recommend/4.jpg)"></div>
+                                    <div class="text">
+                                        <span class="headline">桜田五輪相、「5分前行動」宣言＝国会遅刻を反省</span>
+                                        <p class="article">　桜田義孝五輪担当相は22日午前の閣議後の記者会見で、21日の衆院予算委員会に遅刻したことについて「深くおわび申し上げたい」と改めて陳謝した。
+                                        </p>
+                                        <span class="publishing">時事通信</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="img" style="background-image: url(img/recommend/5.jpg)"></div>
+                                    <div class="text">
+                                        <span class="headline">「そのままでは社会のゴミになる」お金を稼ぐ生き方を捨てた東大卒の若者にデヴィ夫人が喝</span>
+                                        <p class="article">お金はあればあるほど幸せなのか。19日放送のAbemaTV『AbemaPrime』は、そんな難問について考えた。</p>
+                                        <span class="publishing">AbemaTIMES</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
 
+                    </div>
                 </div>
-            </div>
-            <div class="column_right">
-                <div class="subject">
-                    <h2 class="screen_out">관심 주제</h2>
-                    <ul>
-                        <li><a href="www.naver.com"><span>ショッピング</span></a></li>
-                        <li><a href=""><span>ヤフオク!</span></a></li>
-                        <li><a href=""><span>LOHACO</span></a></li>
-                        <li><a href=""><span>トラベル</span></a></li>
-                        <li><a href=""><span>一休.com</span></a></li>
-                        <li><a href=""><span>ニュース</span></a></li>
-                        <li><a href=""><span>スポーツナビ</span></a></li>
-                        <li><a href=""><span>ファイナンス</span></a></li>
-                        <li><a href=""><span>テレビ</span></a></li>
-                        <li><a href=""><span>モバゲー</span></a></li>
-                        <li><a href=""><span>地図</span></a></li>
-                        <li class="more"><a href="#"><span>더보기</span></a>
-                            <ul class="sub_subject">
-                                <li><a href="www.daum.net"><span><input type="radio" name="" id=""></span><label for="">路線情報</label></a></li>
-                                <li><a href=""><span><input type="radio" name="" id=""></span><label for="">Retty</label></a></li>
-                                <li><a href=""><span><input type="radio" name="" id=""></span><label for="">クラシル</label></a></li>
-                                <li><a href=""><span><input type="radio" name="" id=""></span><label for="">不動産</label></a></li>
-                                <li><a href=""><span><input type="radio" name="" id=""></span><label for="">自動車</label></a></li>
-                                <li><a href=""><span><input type="radio" name="" id=""></span><label for="">ブログ</label></a></li>
-                                <button class="close_btn">닫기</button>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <script>
-                    $(function() {
+                <div class="column_right">
+                    <div class="subject">
+                        <h2 class="screen_out">관심 주제</h2>
+                        <ul>
+                            <li><a href=""><span>ショッピング</span></a></li>
+                            <li><a href=""><span>ヤフオク!</span></a></li>
+                            <li><a href=""><span>LOHACO</span></a></li>
+                            <li><a href=""><span>トラベル</span></a></li>
+                            <li><a href=""><span>一休.com</span></a></li>
+                            <li><a href=""><span>ニュース</span></a></li>
+                            <li><a href=""><span>スポーツナビ</span></a></li>
+                            <li><a href=""><span>ファイナンス</span></a></li>
+                            <li><a href=""><span>テレビ</span></a></li>
+                            <li><a href=""><span>モバゲー</span></a></li>
+                            <li><a href=""><span>地図</span></a></li>
+                            <li class="more"><a href=""><span>&#43;&nbsp;more</span></a>
+                                <ul class="sub_subject">
+                                    <li><a href=""><span>路線情報</span></a></li>
+                                    <li><a href=""><span>Retty</span></a></li>
+                                    <li><a href=""><span>クラシル</span></a></li>
+                                    <li><a href=""><span>不動産</span></a></li>
+                                    <li><a href=""><span>自動車</span></a></li>
+                                    <li><a href=""><span>ブログ</span></a></li>
+                                    <li><a href=""><span>TRILL</span></a></li>
+                                    <li><a href=""><span>パートナー</span></a></li>
+                                    <li><a href=""><span>ebookjapan</span></a></li>
+                                    <li><a href=""><span>映画</span></a></li>
+                                    <li><a href=""><span>占い</span></a></li>
+                                    <li><a href=""><span>ロコ</span></a></li>
+                                    <li class="close"><a href=""><span>&#45;&nbsp;close</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <script>
+                        $(function() {
                         $('.subject .more').click(function() {
                             $('.sub_subject').css('display','block');
                         });
@@ -194,45 +212,71 @@
                             subject_li.eq(count).find('a').attr('href',label_href);
                         });
                     })
-                </script>
-                <div class="login">
-                    <h2 class="screen_out">로그인</h2>
-                    <form action="">
-                        <div class="login_section">
-                            <!-- <label for="uname"><b>Username</b></label> -->
-                            <input type="text" placeholder="ID/携帯電話番号/メールアドレス" name="uname" required>
-                            <button type="submit">ログイン</button>
-                            <ul>
-                                <li><a href="">新規取得</a></li>
-                                <li><a href="">ログインできない場合</a></li>
-                            </ul>
-                            <!-- <label>
+                </script> -->
+                    <div class="login">
+                        <h2 class="screen_out">로그인</h2>
+                        <form action="">
+                            <div class="login_section">
+                                <!-- <label for="uname"><b>Username</b></label> -->
+                                <input type="text" placeholder="ID/携帯電話番号/メールアドレス" name="uname" required>
+                                <button type="submit">ログイン</button>
+                                <ul>
+                                    <li><a href="">新規取得</a></li>
+                                    <li><a href="">ログインできない場合</a></li>
+                                </ul>
+                                <!-- <label>
                                 <input type="checkbox" checked="checked" name="remember"> Remember me
                             </label> -->
-                        </div>
-                        <!-- <div class="container" style="background-color:#f1f1f1">
+                            </div>
+                            <!-- <div class="container" style="background-color:#f1f1f1">
                             <button type="button" class="cancelbtn">Cancel</button>
                             <span class="psw">Forgot <a href="#">password?</a></span>
                         </div> -->
-                    </form>
-                </div>
-                <div class="ad">
-                    <img src="img/ad/ad1.jpg" alt="advertise img">
-                </div>
-                <div class="trending">
-                    <h2>リアルタイム検索</h2>
-                    <ul>
-                        <li><a href=""><span class="num">1</span><span>江田憲司</span></a></li>
-                        <li><a href=""><span class="num">2</span><span>アイア</span></a></li>
-                        <li><a href=""><span class="num">3</span><span>術後せん妄</span></a></li>
-                        <li><a href=""><span class="num">4</span><span>MYOJO</span></a></li>
-                        <li><a href=""><span class="num">5</span><span>乳腺外科医</span></a></li>
-                    </ul>
+                        </form>
+                    </div>
+                    <div class="primieunm">
+                        <span><a href="">パソコンやスマホでも 会員なら追加料金なし</a></span>
+                    </div>
+                    <div class="ad">
+                        <img src="img/ad/ad1.jpg" alt="advertise img">
+                    </div>
+                    <div class="trending">
+                        <h2>リアルタイム検索</h2>
+                        <ul>
+                            <div class="left">
+                                <li><a href=""><span class="num">1.</span><span>江田憲司</span></a></li>
+                                <li><a href=""><span class="num">2.</span><span>アイア</span></a></li>
+                                <li><a href=""><span class="num">3.</span><span>術後せん妄</span></a></li>
+                                <li><a href=""><span class="num">4.</span><span>MYOJO</span></a></li>
+                                <li><a href=""><span class="num">5.</span><span>乳腺外科医</span></a></li>
+                            </div>
+                            <div class="right">
+                                <li><a href=""><span class="num">6.</span><span>ジャッジアイズ</span></a></li>
+                                <li><a href=""><span class="num">7.</span><span>新内眞衣</span></a></li>
+                                <li><a href=""><span class="num">8.</span><span>韓国紙幣</span></a></li>
+                                <li><a href=""><span class="num">9.</span><span>Zepp金沢</span></a></li>
+                                <li><a href=""><span class="num">10.</span><span>キッドカフェ</span></a></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="job">
+                        <h2>求人</h2>
+                        <ul>
+                            <li><a href="">転職</a></li>
+                            <li><a href="">バイト</a></li>
+                            <li><a href="">派遣</a></li>
+                            <li><a href="">女性</a></li>
+                            <li class="lastline"><a href="">中高年、シニア向けの求人</a></li>
+                        </ul>
+                        <p><a href="">月収70万円定年なく働く</a></p>
+                        <p><a href="">1日1万円～のバイト多数</a></p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <?php include 'footer.php';?>
     </div>
-    <?php include 'footer.php';?>
 </body>
 
 </html>

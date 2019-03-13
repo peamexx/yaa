@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
 
+
 .header {
 
     .head {
@@ -58,6 +59,7 @@
                         width: 58px;
                         height: 100%;
                         background: url('https://img.icons8.com/material/24/000000/search.png') no-repeat center center;
+                        color: transparent;
                         position: absolute;
                     }
                 }
@@ -127,8 +129,50 @@
         .column_left {
             float: left;
 
+            .line_news {
+                width: 690px;
+                height: 25px;
+                padding-left: 30px;
+                background-color: #fff;
+                border: 1px solid #dee3eb;
+                overflow: hidden;
+
+                ul {
+                    li {
+                        padding: 5px;
+                        list-style: square;
+                        font-size: 13px;
+                        position: relative;
+                        animation: auto 10s infinite;
+                    }
+
+                    @keyframes auto {
+                        0% {
+                            top: 0;
+                        }
+
+                        25% {
+                            top: -25px;
+                        }
+
+                        50% {
+                            top: -50px;
+                        }
+
+                        75% {
+                            top: -75px;
+                        }
+
+                        100% {
+                            top: 0px;
+                        }
+                    }
+                }
+            }
+
             .theme_news {
                 width: 690px;
+                padding-top: 10px;
 
                 .tab {
                     overflow: hidden;
@@ -165,7 +209,7 @@
 
                     .top {
 
-                        > a {
+                        >a {
                             display: block;
                             position: relative;
 
@@ -193,7 +237,7 @@
                             }
                         }
 
-                        > a:before {
+                        >a:before {
                             content: '';
                             width: 45%;
                             height: 286px;
@@ -262,8 +306,6 @@
                             margin-right: 20px;
                         }
 
-                        .right {}
-
                         div {
                             float: left;
                             width: 304px;
@@ -294,7 +336,6 @@
 
             .ad {
                 width: 690px;
-                height: 95px;
             }
 
             .recommend {
@@ -380,22 +421,22 @@
                 border: 1px solid #dee3eb;
                 position: relative;
 
-                >ul {
+                ul {
                     width: 100%;
 
-                    >li {
+                    li {
                         float: left;
                         width: 33.3%;
                         height: 50px;
                         border-bottom: 1px solid #f1f3f6;
                         border-right: 1px solid #f1f3f6;
 
-                        >a {
+                        a {
                             display: block;
                             height: 50px;
                             text-align: center;
 
-                            >span {
+                            span {
                                 line-height: 46px;
                                 text-align: center;
                                 font-size: 13px;
@@ -405,21 +446,33 @@
 
                         .sub_subject {
                             display: none;
-                            width: 55%;
+                            width: 100%;
+                            border: 1px solid #f1f3f6;
                             background-color: #fff;
                             overflow: hidden;
                             position: absolute;
-                            top: 0;
-                            left: -165px;
+                            top: -1px;
+                            left: -298px;
+                            z-index: 2;
 
-                            li {
-                                padding: 10px;
+                            .close {
+                                width: 100%;
+                                border-right: 0;
                             }
                         }
                     }
 
-                    >li:nth-child(3n+0) {
+                    li:nth-child(3n+0) {
                         border-right: none;
+                    }
+
+                    .more,
+                    .close {
+                        >a {
+                            >span {
+                                color: #4070ff;
+                            }
+                        }
                     }
                 }
             }
@@ -477,6 +530,26 @@
                 }
             }
 
+            .primieunm {
+                width: 300px;
+                height: 80px;
+                margin-top: 10px;
+                padding: 10px;
+                background: url(../img/ad/primium.jpg);
+                background-color: #fff;
+                border: 1px solid #dee3eb;
+
+                span {
+                    display: block;
+                    float: right;
+                    width: 50%;
+                    margin-top: 10px;
+                    line-height: 1.5;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+            }
+
             .ad {
                 width: 300px;
                 height: 185px;
@@ -488,6 +561,7 @@
                 padding: 15px;
                 background-color: #fff;
                 border: 1px solid #dee3eb;
+                overflow: hidden;
 
                 h2 {
                     margin-bottom: 15px;
@@ -495,8 +569,16 @@
                 }
 
                 ul {
+
+                    .left {
+                        float: left;
+                    }
+
+                    .right {
+                        float: right;
+                    }
+
                     li {
-                        margin-left: 15px;
                         margin-bottom: 5px;
 
                         a {
@@ -520,24 +602,77 @@
                     }
                 }
             }
-        }
 
-        .ad {
-            margin: 10px 0;
-            border: 1px solid #dee3eb;
-            background-color: #fff;
-            font-size: 13px;
-            overflow: hidden;
-            position: relative;
-            img {
-                width: 100%;
+            .job {
+                width: 300px;
+                margin-top: 10px;
+                padding: 15px;
+                background-color: #fff;
+                border: 1px solid #dee3eb;
+                overflow: hidden;
+
+                h2 {
+                    margin-bottom: 15px;
+                    font-weight: bold;
+                }
+
+                ul {
+                    margin-bottom: 10px;
+                    padding-bottom: 5px;
+                    border-bottom: 1px double #f1f3f6;
+                    overflow: hidden;
+
+                    li {
+                        float: left;
+                        width: 24%;
+                        margin-right: 1%;
+                        padding: 5px;
+                        border-radius: 100px;
+                        background-color: #f1f3f6;
+
+                        a {
+                            display: block;
+                            text-align: center;
+                        }
+                    }
+
+                    li:nth-child(4) {
+                        margin-right: 0;
+                    }
+
+                    .lastline {
+                        width: 100%;
+                        margin-top: 5px;
+                    }
+
+                    li:hover {
+                        background-color: #4070ff;
+
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                p {
+                    margin-bottom: 7px;
+                    text-align: center;
+                    font-size: 14px;
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                p:last-child {
+                    margin-bottom: 0;
+                }
             }
         }
     }
 }
 
 .footer {
-    height: 100px;
     border-top: 1px solid #dee3eb;
     overflow: hidden;
 
@@ -547,7 +682,7 @@
 
         ul {
             display: table-cell;
-            height: 100px;
+            height: 70px;
             vertical-align: middle;
 
             li {
@@ -578,6 +713,18 @@
                 display: none;
             }
         }
+
+        .footer_bottom {
+            margin-bottom: 20px;
+
+            span {
+                display: table-cell;
+                height: 30px;
+                vertical-align: middle;
+                color: #999;
+                font-size: 13px;
+            }
+        }
     }
 }
 
@@ -590,6 +737,19 @@
     height: 0;
     line-height: 0;
     text-indent: -9999px;
+}
+
+.ad {
+    margin: 10px 0;
+    border: 1px solid #dee3eb;
+    background-color: #fff;
+    font-size: 13px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
 }
 
 .ad:before {
