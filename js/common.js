@@ -8,15 +8,17 @@ $(function() {
         $("#"+tab_id).show();
     })
 
-    // .subject
+    // .subject more/close 버튼
     $('.subject .more').click(function() {
         event.preventDefault();
-        // $('.wrap:before').css('display','block');
-        $('.sub_subject').show();
+        $('.sub_subject').addClass('show');
+        $('.black').addClass('show');
     })
 
     $('.subject .close').click(function() {
         event.preventDefault();
-        $('.sub_subject').hide();
+        event.stopPropagation();
+        $('.sub_subject').removeClass('show');
+        $('.black').removeClass('show');
     })
 })
