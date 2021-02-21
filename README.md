@@ -2,11 +2,17 @@
 
 > 일본 yahoo 메인 페이지 리뉴얼 (2019.2)
 
+![This is a alt text.](http://peamexx.com/img/yap.jpg)
+
 [미리보기](https://peamexx.github.io/yahoo/)
 
 *블로그 [peamexx.tistory.com](http://peamexx.tistory.com)*
 
 *이메일 peamexx@daum.net*
+
+✨✨✨
+[전체 포트폴리오 보기](https://peamexx.github.io/me/)
+✨✨✨
 
 ___
 
