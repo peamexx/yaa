@@ -2,7 +2,7 @@
 
 > 일본 yahoo 메인 페이지 리뉴얼 (2019.2)
 
-![This is a alt text.](http://peamexx.com/img/yap.jpg)
+![yahoo pc version img](https://user-images.githubusercontent.com/38338103/109741293-1d6dfb00-7c10-11eb-8177-94d1fc6751b8.jpg)
 
 [미리보기](https://peamexx.github.io/yahoo/)
 
